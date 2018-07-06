@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+<head>
+    <title>Prog.kiev.ua</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        padding: 20px;
+    }
+
+    #outer {
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid black;
+        background: #fc3;
+        width: 800px;
+        padding: 20px;
+    }
+
+    #inner {
+        margin: 0 auto;
+        text-align: left;
+        border: 1px solid black;
+        background: #ac3;
+        width: 700px;
+        padding: 20px;
+    }
+</style>
+<body>
+
+    <div id="outer">
+        <h2> Welcome to our Questionnaire.<br>
+            Would you be so kind to put your Name, Surname, Age <br>
+            in the corresponding fields.<br>
+            Then please put your answers on mentioned below questions<br>
+            and then press "Next".
+        </h2>
+    </div>
+    <form action="/login" method="POST" id="outer">
+        <div id="inner">
+            <label><b>Your Name:</b></label><br>
+            <input type="text" name="name"><br>
+            <label><b>Your Surname:</b></label><br>
+            <input type="text" name="surname"><br>
+            <label><b>Your Age:</b></label><br>
+            <input type="text" name="age">
+        </div>
+        <div id="inner">
+            <h3>QUESTIONS:</h3>
+
+            <label><b> What do you usually like to do ? </b></label><br>
+            <input type="text" name="questionOne" size="60">
+            <br>
+            <label><b> How much time do you spend for coding ? </b></label><br>
+            <input type="text" name="questionTwo" size="60">
+            <br>
+            <label><b> Are you really there? </b></label><br>
+            <input type="text" name="questionThree" size="60">
+            <br>
+        </div>
+        <div id="inner">
+        <input type="submit" value="Next">
+        </div>
+    </form>
+    </body>
+</html>
